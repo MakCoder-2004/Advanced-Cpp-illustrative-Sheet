@@ -1,9 +1,9 @@
 # C++ Advanced Level
 **By: Makrious Ayman**
 
-## Visual Studio Tips
+# Visual Studio Tips
 
-### Creating A Library Using Visual Studio
+## Creating A Library Using Visual Studio
 
 1. From the upper bar select view
 2. Choose "Selection Explorer"
@@ -33,7 +33,7 @@
     ```
     instead of writing `LibraryName::FunctionName();` every time you call a function.
 
-### Function Fast Access on Visual Studio
+## Function Fast Access on Visual Studio
 
 - If you see a function call and you want to go to this function:
     - Press on the function
