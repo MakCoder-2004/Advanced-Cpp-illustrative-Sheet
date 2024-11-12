@@ -43,3 +43,62 @@
 - If you need to see the call hierarchy:
     - Right-click on the function
     - Choose "Go to call hierarchy"
+
+# Ternary Operator
+
+## Short Hand IF
+
+**Syntax:**
+```cpp
+                   true            false
+                    |               |
+    condition ? value_if_true : value_if_false;
+
+    // Old Way
+    if(condition){
+        // true block
+    }else{
+        // false block
+    }
+```
+## Ranged Loop
+**Syntax:**
+``` cpp
+    for(range_declaration : range_expression){
+        // code
+    }
+```
+**Example:**
+``` cpp
+    int main(){
+        int arr[] = {1,2,3,4,5};
+    
+        for(int i : arr){
+            cout << arr[i] << endl;
+        }
+    }
+
+```
+## Validation
+**Validate Number**
+- This technique works with numbers only:
+  ``` cpp
+      int ReadNumber(){
+            int num;
+            cout << "Please Enter Number" << endl;
+            cin >> num;
+        
+            while(cin.fail()) {
+                cin.clear();
+                cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                cout << "Invalid Input! Please Enter a Number." << endl;
+                cin >> num;
+            }
+            return num;
+        }
+    
+    int main(){
+        cout << "Your Number is " << ReadNumber() << endl;
+    }
+
+  ```
